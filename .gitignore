@@ -1,0 +1,11 @@
+**/obj
+**/bin
+**/node_modules
+**/__pycache__
+
+**/*local.json
+
+**/.vs
+**/.vscode
+**/*.suo
+**/*.user

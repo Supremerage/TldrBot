@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  auto-summary:
+    image: autosummary:latest
+    build:
+      context: ./AutoSummaryApi
+      dockerfile: Dockerfile
+    ports:
+      - "8200:8000"
+  text-generation:
+    image: text-generation:latest
+    build:
+      context: ./TextGenerator
+      dockerfile: Dockerfile
+    ports:
+      - "8300:8000"
